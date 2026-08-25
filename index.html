@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBA Chile — Un lugar de encuentro</title>
+  <meta name="description" content="MBA Chile: liderazgo, aprendizaje y desarrollo. Promovemos la colaboración entre estudiantes y ex-alumnos chilenos de los mejores MBAs del mundo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">MBA<span>Chile</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#mision">Sobre Nosotros</a></li>
+          <li><a href="#pilares">Iniciativas</a></li>
+          <li><a href="#equipos">Equipos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#" class="btn btn-ghost">Iniciar sesión</a>
+          <a href="#" class="btn btn-primary">Registro</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>UN LUGAR<br>DE ENCUENTRO<br><span>LIDERAZGO</span><br><span>APRENDIZAJE</span><br><span>Y DESARROLLO</span></h1>
+        <p class="hero-text">
+          Promovemos instancias para incentivar a los alumnos y ex alumnos de MBA Chile
+          a que desde sus puestos de liderazgo aporten a generar un mejor país.
+        </p>
+      </div>
+    </section>
+
+    <section id="mision" class="mision">
+      <div class="container">
+        <h2>Misión</h2>
+        <p>
+          MBA Chile es una asociación creada con el objetivo de potenciar la colaboración entre
+          estudiantes y ex-alumnos chilenos de los mejores MBAs del mundo, generando valor a
+          distintos actores presentes en la sociedad chilena y facilitando el desarrollo de
+          diversas iniciativas que hagan de Chile un mejor país.
+        </p>
+      </div>
+    </section>
+
+    <section id="pilares" class="pilares">
+      <div class="container">
+        <h2>Pilares</h2>
+        <p class="section-intro">
+          De este objetivo se desprenden tres pilares que están alineados con el espíritu de MBA Chile:
+          aporte país, colaboración y empleabilidad.
+        </p>
+
+        <div class="pilar-grid">
+          <article class="pilar-card">
+            <span class="pilar-num">1</span>
+            <h3>Aporte País</h3>
+            <p>Desarrollar iniciativas y aportar en la discusión del desarrollo de la sociedad
+               chilena, basado en datos y en las necesidades tangibles del país y sus ciudadanos.</p>
+          </article>
+
+          <article class="pilar-card">
+            <span class="pilar-num">2</span>
+            <h3>Colaboración</h3>
+            <p>Potenciar la comunidad a través de ampliar las redes de contacto entre estudiantes,
+               ex-alumnos y stakeholders claves, que permita generar nuevos negocios, empleos o iniciativas.</p>
+          </article>
+
+          <article class="pilar-card">
+            <span class="pilar-num">3</span>
+            <h3>Empleabilidad</h3>
+            <p>Mejorar las alternativas de empleo para los egresados de MBA, dando a conocer los
+               beneficios de realizar un MBA en el extranjero y generando lazos con empresas en todo el mundo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipos" class="equipos">
+      <div class="container">
+        <h2>Equipos</h2>
+        <p class="section-intro">MBA Chile cuenta con 3 equipos para poder cumplir su objetivo:</p>
+
+        <div class="equipo-grid">
+          <article class="equipo-card">
+            <h3>MBA Chile EEUU</h3>
+            <p>Busca generar comunidad entre los alumnos y alumni de distintas universidades en EEUU y Canadá.</p>
+            <a href="#" class="link-arrow">VER MÁS →</a>
+          </article>
+
+          <article class="equipo-card">
+            <h3>MBA Chile Europa</h3>
+            <p>Busca generar comunidad entre los alumnos y alumni de distintas universidades europeas.</p>
+            <a href="#" class="link-arrow">VER MÁS →</a>
+          </article>
+
+          <article class="equipo-card">
+            <h3>Women MBA Chile</h3>
+            <p>Organización que busca aumentar la participación de mujeres chilenas en programas de MBA en el extranjero.</p>
+            <a href="#" class="link-arrow">VER MÁS →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h2>¿Dónde están estudiando los chilenos?</h2>
+          <p>Sitio web MBA Chile, un portal de encuentro con información relevante.</p>
+          <p class="contact-email">✉️ <a href="mailto:contacto@mbachile.org">contacto@mbachile.org</a></p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <label for="email">Suscríbete para recibir información relevante de los programas de MBA</label>
+          <div class="form-row">
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            <button type="submit" class="btn btn-primary">Suscríbete</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> MBA Chile</span>
+      <nav class="footer-nav">
+        <a href="#pilares">Iniciativas</a>
+        <a href="#equipos">Equipos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
