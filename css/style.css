@@ -66,28 +66,17 @@ h1, h2, h3 {
 .btn-ghost:hover { border-color: var(--color-accent); color: var(--color-accent); }
 
 /* ============ Header ============ */
-.site-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  padding: 20px 0;
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .logo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
 }
-.logo span { color: var(--color-accent); }
+
+.logo-img {
+  height: 96px;
+  width: auto;
+  display: block;
+}
 
 .main-nav {
   display: flex;
@@ -130,24 +119,39 @@ h1, h2, h3 {
 .hero {
   background: linear-gradient(180deg, var(--color-bg-dark) 0%, var(--color-bg-dark-alt) 100%);
   color: #fff;
-  padding: 160px 0 100px;
-  min-height: 70vh;
+  padding: 48px 0;
+  min-height: unset;
   display: flex;
   align-items: center;
 }
 
-.hero h1 {
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
-  letter-spacing: 1px;
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
 }
 
-.hero h1 span { color: var(--color-text-muted); font-weight: 300; }
+.hero h1 {
+  font-size: clamp(1.3rem, 2.1vw, 1.8rem);
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  flex: 1;
+  text-align: left;
+}
 
 .hero-text {
   margin-top: 28px;
   max-width: 480px;
   color: var(--color-text-muted);
   font-size: 1.05rem;
+}
+
+/* ============ Foto comunidad ============ */
+.hero-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ============ Misión ============ */
@@ -185,9 +189,15 @@ h1, h2, h3 {
   color: var(--color-text-muted);
 }
 
-.pilar-grid, .equipo-grid {
+.pilar-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.equipo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
 
@@ -320,6 +330,7 @@ h1, h2, h3 {
   .main-nav ul { flex-direction: column; gap: 20px; }
   .nav-actions { flex-direction: column; width: 100%; }
 
-  .hero { padding: 130px 0 70px; text-align: left; }
+  .hero-inner { flex-direction: column; align-items: flex-start; gap: 28px; }
+  .hero h1 { text-align: left; max-width: 100%; }
   .form-row { flex-direction: column; }
 }
