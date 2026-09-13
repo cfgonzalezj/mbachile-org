@@ -45,9 +45,8 @@ h1, h2, h3 {
   --mba-tinta-suave: #6A6E76;
   --mba-hueso: #F7F5F0;
   --mba-borde: #DEDAD2;
+  --content-pad: max(44px, calc((100% - 1440px) / 2 + 44px));
 
-  max-width: 1440px;
-  margin: 0 auto;
   overflow: hidden;
   background: var(--mba-hueso);
   color: var(--mba-tinta);
@@ -63,7 +62,7 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 44px;
+  padding: 10px var(--content-pad);
   background: var(--mba-azul);
 }
 
@@ -134,7 +133,7 @@ h1, h2, h3 {
 
 .home-hero-content {
   position: relative;
-  padding: 56px 44px;
+  padding: 56px var(--content-pad);
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -162,7 +161,7 @@ h1, h2, h3 {
 }
 
 /* ---- Sección genérica (misión/pilares, equipos, mapa) ---- */
-.home-section { padding: 64px 44px; }
+.home-section { padding: 64px var(--content-pad); }
 
 /* ---- Misión + Pilares ---- */
 .home-mission-pilares {
@@ -381,7 +380,7 @@ h1, h2, h3 {
 .home-subscribe {
   background: var(--mba-azul);
   color: #fff;
-  padding: 56px 44px;
+  padding: 56px var(--content-pad);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -434,7 +433,7 @@ h1, h2, h3 {
 
 /* ---- Footer ---- */
 .home-footer {
-  padding: 20px 44px;
+  padding: 20px var(--content-pad);
   display: flex;
   justify-content: space-between;
   font-size: 13px;
@@ -483,7 +482,7 @@ h1, h2, h3 {
 .dir-hero {
   background: var(--mba-azul, #0C2340);
   color: #fff;
-  padding: 40px 44px 44px;
+  padding: 40px var(--content-pad, 44px) 44px;
   display: grid;
   grid-template-columns: 1.1fr .9fr;
   gap: 56px;
@@ -552,7 +551,7 @@ h1, h2, h3 {
 .dir-section {
   background: #fff;
   border-bottom: 1px solid var(--mba-borde, #DEDAD2);
-  padding: 64px 44px;
+  padding: 64px var(--content-pad, 44px);
 }
 
 .dir-grid {
@@ -637,7 +636,7 @@ h1, h2, h3 {
 .dir-cta {
   background: var(--mba-azul, #0C2340);
   color: #fff;
-  padding: 28px 44px;
+  padding: 28px var(--content-pad, 44px);
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 40px;
