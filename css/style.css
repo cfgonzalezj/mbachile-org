@@ -48,6 +48,7 @@ h1, h2, h3 {
   --mba-rojo: #C8102E;
   --mba-rojo-borde: rgba(200,16,46,.35);
   --mba-rojo-bg: rgba(200,16,46,.07);
+  --mba-rosa: #F07A8C;
   --content-pad: max(44px, calc((100% - 1440px) / 2 + 44px));
 
   overflow: hidden;
@@ -511,6 +512,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   color: rgba(255,255,255,.6);
 }
+.dir-breadcrumb-active { color: var(--mba-rosa); }
 
 .dir-hero-main h1 {
   margin: 0;
@@ -547,6 +549,7 @@ h1, h2, h3 {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: -.03em;
+  color: var(--mba-rosa);
 }
 
 .dir-counter-label {
@@ -611,7 +614,7 @@ h1, h2, h3 {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  border: 1px solid var(--mba-borde, #DEDAD2);
+  border: 1px solid var(--mba-rojo-borde);
   border-radius: 100px;
   padding: 5px;
 }
@@ -620,7 +623,7 @@ h1, h2, h3 {
 .member-role {
   font-size: 11px;
   font-weight: 600;
-  color: var(--mba-azul, #0C2340);
+  color: var(--mba-rojo);
   letter-spacing: .01em;
 }
 
@@ -666,8 +669,8 @@ h1, h2, h3 {
 }
 
 .dir-cta a.dir-cta-btn {
-  background: #fff;
-  color: var(--mba-azul, #0C2340);
+  background: var(--mba-rojo);
+  color: #fff;
   font-weight: 700;
   font-size: 13px;
   padding: 11px 18px;
