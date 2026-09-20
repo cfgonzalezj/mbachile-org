@@ -45,6 +45,9 @@ h1, h2, h3 {
   --mba-tinta-suave: #6A6E76;
   --mba-hueso: #F7F5F0;
   --mba-borde: #DEDAD2;
+  --mba-rojo: #C8102E;
+  --mba-rojo-borde: rgba(200,16,46,.35);
+  --mba-rojo-bg: rgba(200,16,46,.07);
   --content-pad: max(44px, calc((100% - 1440px) / 2 + 44px));
 
   overflow: hidden;
@@ -64,6 +67,7 @@ h1, h2, h3 {
   justify-content: space-between;
   padding: 10px var(--content-pad);
   background: var(--mba-azul);
+  border-bottom: 3px solid var(--mba-rojo);
 }
 
 .home-logo { display: flex; align-items: center; }
@@ -184,7 +188,7 @@ h1, h2, h3 {
   font-size: 12px;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--mba-tinta-suave);
+  color: var(--mba-rojo);
 }
 
 .home-mission-text {
@@ -205,7 +209,7 @@ h1, h2, h3 {
 }
 
 .home-pilar {
-  border-top: 3px solid var(--mba-azul);
+  border-top: 3px solid var(--mba-rojo);
   padding-top: 18px;
   display: flex;
   flex-direction: column;
@@ -288,8 +292,9 @@ h1, h2, h3 {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
   letter-spacing: .1em;
-  color: var(--mba-tinta-suave);
-  border: 1px solid var(--mba-borde);
+  color: var(--mba-rojo);
+  border: 1px solid var(--mba-rojo-borde);
+  background: var(--mba-rojo-bg);
   padding: 3px 8px;
   border-radius: 100px;
 }
@@ -322,9 +327,13 @@ h1, h2, h3 {
 
 .home-directorio-card > span {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
+  background: var(--mba-rojo);
+  padding: 11px 20px;
+  border-radius: 6px;
   flex-shrink: 0;
+  white-space: nowrap;
 }
 
 /* ---- Mapa ---- */
@@ -354,7 +363,7 @@ h1, h2, h3 {
 .home-map-header a {
   font-size: 14px;
   font-weight: 600;
-  color: var(--mba-azul);
+  color: var(--mba-rojo);
 }
 
 .home-map-placeholder {
@@ -419,8 +428,8 @@ h1, h2, h3 {
 .home-subscribe-form input:focus { outline: none; border-color: #fff; }
 
 .home-subscribe-form button {
-  background: #fff;
-  color: var(--mba-azul);
+  background: var(--mba-rojo);
+  color: #fff;
   font-weight: 700;
   font-size: 13px;
   padding: 12px 20px;
